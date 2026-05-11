@@ -1,17 +1,17 @@
-package overcooked_2;
+package overcooked_2.abstractFactory;
 
-public class JapoFactory implements RestaurantFactory {
+public class ItaliaFactory implements RestaurantFactory {
 
 	@Override
 	public Cuiner crearCuiner(String nom, int sexe) {
 		// TODO Auto-generated method stub
-		return new CuinerSushi(nom, sexe);
+		return new CuinerPizza(nom, sexe);
 	}
 
 	@Override
 	public Ingredient crearIngredient() {
 		// TODO Auto-generated method stub
-		return new Arros();
+		return new Tomaquet();
 	}
 
 }

@@ -1,4 +1,4 @@
-package overcooked_2;
+package overcooked_2.abstractFactory;
 
 public class Tomaquet implements Ingredient {
 

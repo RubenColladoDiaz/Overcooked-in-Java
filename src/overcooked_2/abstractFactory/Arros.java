@@ -1,6 +1,6 @@
-package overcooked_2;
+package overcooked_2.abstractFactory;
 
-public class Arros implements Ingredient{
+public class Arros implements Ingredient {
 
 	@Override
 	public String getNom() {
