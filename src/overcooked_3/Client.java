@@ -24,8 +24,10 @@ public class Client {
 		this.alergia = null;
 	}
 
-	public Client(String alergia) {
+	public Client(String nom, String preferenciaCuina, String alergia) {
 		super();
+		this.nom = nom;
+		this.preferenciaCuina = preferenciaCuina;
 		this.alergia = alergia;
 		this.tempsPaciencia = 18;
 	}
@@ -57,7 +59,7 @@ public class Client {
 			Restaurant.getInstance("El bistreau de DAMvi").afegirPlatBrut(platCuinat);
 			return;
 		}
-		if (platCuinat.getNom().toLowerCase().contains(alergia.toLowerCase())) {
+		if (this.alergia != null && platCuinat.getNom().toLowerCase().contains(alergia.toLowerCase())) {
 			this.marxa = true;
 			System.out.println(this.nom + ": Soc alèrgic a aquest plat, marxo sense pagar.");
 			Restaurant.getInstance("El bistreau de DAMvi").afegirPlatBrut(platCuinat);

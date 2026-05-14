@@ -67,13 +67,11 @@ public class Restaurant implements DecoradorAmbient {
 
 	@Override
 	public double getModificadorDesgastCuiner() {
-		// TODO Auto-generated method stub
-		return 0;
+		return ambient.getModificadorDesgastCuiner();
 	}
 
 	@Override
 	public double getModificadorPacienciaClient() {
-		// TODO Auto-generated method stub
-		return 0;
+		return ambient.getModificadorPacienciaClient();
 	}
 }
