@@ -1,4 +1,4 @@
-package overcooked_3.decorators;
+package overcooked_3.decorators.ingredients;
 
 import overcooked_3.Plat;
 import overcooked_3.decorator.PlatDecorator;

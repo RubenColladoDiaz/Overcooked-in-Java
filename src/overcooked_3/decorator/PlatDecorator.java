@@ -9,6 +9,7 @@ public abstract class PlatDecorator implements Plat {
 	public PlatDecorator(Plat plat) {
 		this.platDecorat = plat;
 	}
+
 	@Override
 	public String getNom() {
 		return platDecorat.getNom();
@@ -25,4 +26,5 @@ public abstract class PlatDecorator implements Plat {
 	public String toString() {
 		return "PlatDecorator [platDecorat=" + platDecorat + "]";
 	}
+	
 }
